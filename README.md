@@ -54,17 +54,17 @@ Congrats, you've just made your first request to Kozmos servers!
 
 Available options;
 
-* query <string>
-* from <int>
-* size <int>
-* sort_by_date <bool>
-* sort_by_popularity <bool>
-* filter_by_user <bool>
-* filter_by_tag <bool>
-* filter_by_homepage <bool>
-* filter_by_typo <bool>
-* filter_by_media <bool>
-* filter_by_nonmedia <bool>
+* query *string*
+* from *int*
+* size *int*
+* sort_by_date *bool*
+* sort_by_popularity *bool*
+* filter_by_user *bool*
+* filter_by_tag *bool*
+* filter_by_homepage *bool*
+* filter_by_typo *bool*
+* filter_by_media *bool*
+* filter_by_nonmedia *bool*
 
 Options for an example request:
 
@@ -141,10 +141,10 @@ the offline bookmarking database [likedb](https://github.com/kozmos/likedb).
 
 Sync API exchanges update objects with following properties:
 
-* Store <string>
-* DocumentId <string>
-* Action <string>
-* Like <string>
+* Store *string*
+* DocumentId *string*
+* Action *string*
+* Like *string*
 
 Action property tells Kozmos server the type of the update. It can be one of following:
 

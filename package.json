@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "tests": "node test",
+    "browser-tests": "node test.js -b -t envify"
   },
   "devDependencies": {
     "envify": "^4.1.0",
