@@ -1,0 +1,11 @@
+{
+  "name": "kozmos-js-sdk",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "prova": "azer/prova"
+  }
+}
