@@ -103,14 +103,21 @@ kozmos.like('http://github.com', err => {
 })
 ```
 
+You can delete a bookmark by calling `unlike` method:
+
+```js
+kozmos.unlike('http://github.com', err => {
+  err
+  // => undefined
+})
+```
+
 ### Tagging
 
 Tag a bookmark you've created previously:
 
 ```js
-const tags = ['eggs', 'yolo', 'etc']
-
-kozmos.tag('github.com', { tags }, err => {
+kozmos.tag('github.com', ['eggs', 'yolo', 'etc'], err => {
   err
   // => undefined
 })
@@ -119,7 +126,7 @@ kozmos.tag('github.com', { tags }, err => {
 Delete a tag:
 
 ```js
-kozmos.untag('github.com', { tag: "etc" }, err => {
+kozmos.untag('github.com', "etc", err => {
   err
   // => undefined
 })
@@ -152,7 +159,7 @@ You can request Kozmos server to give you list of updates since certain time.
 ```js
 let lastUpdateTS = 0
 
-kozmos.receiveUpdatesSince(lastUpdateTS, (err, updates) => {
+kozmos.pull(lastUpdateTS, (err, updates) => {
   err
   // => undefined
 
@@ -209,21 +216,28 @@ const unlikeAmazon = {
 We got two updates now. Let's send them to the server:
 
 ```js
-kozmos.sendUpdates([likeYoutube, unlikeAmazon], err => {
+kozmos.push([likeYoutube, unlikeAmazon], err => {
   console.error(err)
 })
 ```
 
 ## Testing
 
+Set following environment variables:
+
+* API_KEY
+* API_SECRET
+
+Then you can run the tests.
+
 On Node:
 
 ```bash
-$ node test
+$ yarn run tests
 ```
 
 On headless browser:
 
 ```node
-$ node test -b
+$ yarn run browser-tests
 ```

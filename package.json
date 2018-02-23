@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node test"
   },
-  "dependencies": {
+  "devDependencies": {
+    "envify": "^4.1.0",
     "prova": "azer/prova"
   }
 }
