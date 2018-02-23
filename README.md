@@ -185,7 +185,7 @@ kozmos.pull(lastUpdateTS, (err, updates) => {
 
 You can post batch of update objects to Kozmos server to sync updates. Here is an example update:
 
-```
+```js
 const likeYoutube = {
   store: 'likes',
   action: 'add',
@@ -205,7 +205,7 @@ the personal title for the bookmark, the raw & trimmed URL and the time user cre
 
 As mentoined, you can post batch of updates. Let's create another update:
 
-```
+```js
 const unlikeAmazon = {
   store: 'likes',
   action: 'delete',
