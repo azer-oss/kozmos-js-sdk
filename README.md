@@ -7,7 +7,7 @@ Index of Contents:
 
 * [Initialize API Client](#initialize-api-client)
 * [Search](#search)
-* [Create A Bookmark](#create-bookmark)
+* [Bookmarking](#bookmarking)
 * [Tagging](#tagging)
 * [Sync](#sync)
   * [Update Objects](#update-objects)
@@ -91,7 +91,7 @@ kozmos.search(options, (err, resp) => {
   // => { title: "...", "url": "..." }
 ```
 
-### Create A Bookmark
+### Bookmarking
 
 You should use [likedb](https://github.com/kozmos/likedb) if you build a Kozmos client.
 If you want to keep things as minimal as possible, then here is how you can create a bookmark with one request;
