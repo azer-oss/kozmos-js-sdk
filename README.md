@@ -18,7 +18,7 @@ Index of Contents:
 ## Install
 
 ```bash
-$ yarn install kozmos/kozmos-js-sdk
+$ yarn add kozmos/kozmos-js-sdk
 ```
 
 ## Manual
